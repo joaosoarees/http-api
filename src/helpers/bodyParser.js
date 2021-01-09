@@ -8,6 +8,7 @@ function bodyParser(request, callback) {
   request.on('end', () => {
     body = JSON.parse(body);
     request.body = body;
+    
     callback();
   });
 };
