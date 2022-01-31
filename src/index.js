@@ -8,6 +8,8 @@ const server = http.createServer((request, response) => {
   const parsedUrl = url.parse(request.url, true);
   console.log(`Request method: ${request.method} | Endpoint: ${parsedUrl.pathname}`);
 
+  const teste = 'teste';
+
   let { pathname } = parsedUrl;
   let id = null;
 
