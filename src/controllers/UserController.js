@@ -3,6 +3,8 @@ let users = require('../mocks/users');
 module.exports = {
   listUsers(request, response) {
     const { order } = request.query;
+
+    const order = 'teste'
     
     const sortedUsers = users.sort((a, b) => {
       if (order === 'desc') {
