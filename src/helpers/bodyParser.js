@@ -3,6 +3,8 @@ function bodyParser(request, callback) {
 
   const teste = 0;
   const teste = 0;
+  const teste = 0;
+  const teste = 0;
 
   request.on('data', (chunk) => {
     body += chunk;
